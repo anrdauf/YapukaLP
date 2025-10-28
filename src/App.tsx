@@ -303,7 +303,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"
             >
-              <img src="/socials/instagram.svg" alt="Instagram" className="h-6 w-6" />
+              <img src="/public/socials/instagram.svg" alt="Instagram" className="h-6 w-6" />
             </a>
             <a
               href="https://x.com/"
@@ -311,7 +311,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"
             >
-              <img src="/socials/x.svg" alt="X / Twitter" className="h-6 w-6" />
+              <img src="/public/socials/x.svg" alt="X / Twitter" className="h-6 w-6" />
             </a>
             <a
               href="https://tiktok.com/yapuka.app"
@@ -319,7 +319,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"
             >
-              <img src="/socials/tiktok.svg" alt="TikTok" className="h-6 w-6" />
+              <img src="/public/socials/tiktok.svg" alt="TikTok" className="h-6 w-6" />
             </a>
           </div>
         </div>
