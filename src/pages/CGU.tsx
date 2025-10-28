@@ -131,13 +131,13 @@ export default function CGU() {
           <h2>5. Offres et abonnements</h2>
           <h3>5.1 Offres disponibles</h3>
           <ul>
-            <li><strong>Offre Gratuite</strong> : accès limité à 50 recettes et import manuel.</li>
+            <li><strong>Offre Gratuite</strong> : accès limité à 10 recettes et import manuel.</li>
             <li>
-              <strong>Offre Pro (Mensuelle)</strong> : 4,49&nbsp;€/mois, avec recettes illimitées, import automatique, catégories
+              <strong>Offre Pro (Mensuelle)</strong> : 4,99&nbsp;€/mois, avec recettes illimitées, import automatique, catégories
               intelligentes, export PDF et support prioritaire.
             </li>
             <li>
-              <strong>Offre Pro (Annuelle)</strong> : 45&nbsp;€/an, mêmes avantages que l’offre Pro mensuelle.
+              <strong>Offre Pro (Annuelle)</strong> : 39,99&nbsp;€/an, mêmes avantages que l’offre Pro mensuelle.
             </li>
           </ul>
 
