@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Scroll reveal bidirectionnel ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Lien de nav avec soulignement fluide au hover */
+.nav-link {
+  @apply relative text-gray-700 hover:text-gray-900 transition;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  margin: 0 auto;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #fb923c, #f97316);
+  border-radius: 9999px;
+  transition: width .25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
