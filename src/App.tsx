@@ -272,7 +272,7 @@ export default function App() {
       {/* Colonne gauche */}
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <img src="/logo.svg" alt="Yapuka logo" className="h-8 w-auto" />
+          <img src="/logobl.svg" alt="Yapuka logo" className="h-8 w-auto" />
         </div>
         <p className="text-sm text-gray-400 max-w-sm">
           L'application qui simplifie votre cuisine au quotidien en centralisant
