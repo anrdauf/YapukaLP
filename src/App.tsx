@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import CGU from "./pages/CGU";
-import Confidentialite from "./pages/Confidentialite";
-import Contact from "./pages/CONTACT";
 
 
 /* ---------------- NAV ---------------- */
@@ -285,9 +281,9 @@ export default function App() {
         <div>
           <h3 className="font-bold text-white mb-4">Légal</h3>
           <ul className="space-y-3 text-sm">
-            <li><a href="#/cgu" className="hover:text-orange-500 transition">CGU</a></li>
-            <li><a href="#/confidentialite" className="hover:text-orange-500 transition">Confidentialité</a></li>
-            <li><a href="#/contact" className="hover:text-orange-500 transition">Contact</a></li>
+            <li><a href="/terms-of-use" className="hover:text-orange-500 transition">Conditions d'utilisation</a></li>
+            <li><a href="/privacy-policy" className="hover:text-orange-500 transition">Politique de confidentialité</a></li>
+            <li><a href="/contact" className="hover:text-orange-500 transition">Contact</a></li>
           </ul>
         </div>
 

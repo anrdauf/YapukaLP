@@ -30,9 +30,9 @@ export default function CGU() {
         {/* Header */}
         <div className="mb-8 md:mb-10">
           <a
-            href="#/"
+            href="/"
             className="inline-flex items-center gap-2 text-sm text-orange-600 hover:text-orange-700"
-            aria-label="Retour à l’accueil"
+            aria-label="Retour à l'accueil"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M15 18l-6-6 6-6" />

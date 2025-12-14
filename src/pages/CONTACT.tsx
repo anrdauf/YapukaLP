@@ -9,7 +9,7 @@ export default function Contact() {
   
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 shadow-sm">
           <p className="text-lg font-semibold text-orange-700">📩 Email :</p>
-          <a href="mailto:contact@clariosourcing.com" className="text-orange-600 hover:underline">
+          <a href="mailto:contact@yapuka.app" className="text-orange-600 hover:underline">
             contact@yapuka.app
           </a>
   
