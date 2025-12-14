@@ -133,46 +133,30 @@ export default function CGU() {
 
           <h3 className="text-xl font-bold mt-6 mb-4">5.1 Offres disponibles</h3>
 
-          <div className="bg-gray-50 p-5 rounded-lg mb-4">
-            <h4 className="font-bold text-lg mb-2">📦 Offre Gratuite :</h4>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Accès limité à 10 recettes</li>
-              <li>Import manuel uniquement</li>
-              <li><strong>Tarif : Gratuit</strong></li>
-            </ul>
-          </div>
+          <p className="mb-4"><strong>Offre Gratuite :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>10 recettes maximum</li>
+            <li>Import manuel</li>
+            <li>Tarif : Gratuit</li>
+          </ul>
 
-          <div className="bg-orange-50 p-5 rounded-lg mb-4 border-2 border-orange-200">
-            <h4 className="font-bold text-lg mb-2">⭐ Yapuka Plus (Mensuel) :</h4>
-            <ul className="list-disc ml-6 space-y-1">
-              <li><strong>Prix : 4,99 €/mois</strong></li>
-              <li><strong>Durée : Abonnement mensuel</strong></li>
-              <li><strong>Renouvellement : Automatique chaque mois</strong></li>
-              <li><strong>Essai gratuit : AUCUN</strong> (paiement immédiat)</li>
-              <li><strong>Avantages :</strong> Recettes illimitées, import automatique depuis Instagram/TikTok/YouTube/Pinterest, catégories intelligentes, scanner de recettes manuscrites, génération automatique de listes de courses, planification de repas, export PDF et support prioritaire.</li>
-            </ul>
-          </div>
+          <p className="mb-4"><strong>Yapuka Plus - Mensuel :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li><strong>Prix : 4,99 €/mois</strong></li>
+            <li><strong>Durée : 1 mois</strong></li>
+            <li>Renouvellement automatique mensuel</li>
+            <li><strong>Pas d'essai gratuit</strong> (paiement immédiat)</li>
+            <li>Fonctionnalités : Recettes illimitées, import automatique depuis Instagram/TikTok/YouTube/Pinterest/Facebook, listes de courses automatiques, planification de repas.</li>
+          </ul>
 
-          <div className="bg-orange-50 p-5 rounded-lg mb-4 border-2 border-orange-200">
-            <h4 className="font-bold text-lg mb-2">🏆 Yapuka Plus (Annuel) :</h4>
-            <ul className="list-disc ml-6 space-y-1">
-              <li><strong>Prix : 39,99 €/an</strong> (soit <strong>3,33 €/mois</strong>)</li>
-              <li><strong>Durée : Abonnement annuel</strong></li>
-              <li><strong>Essai gratuit : 7 JOURS GRATUITS</strong></li>
-              <li><strong>Renouvellement : Automatique chaque année</strong></li>
-              <li><strong>Avantages :</strong> Mêmes avantages que l'offre Yapuka Plus mensuelle.</li>
-            </ul>
-          </div>
-
-          <div className="bg-yellow-50 p-5 rounded-lg mb-4 border-l-4 border-yellow-400">
-            <p className="font-bold mb-2">⚠️ Important - Essai gratuit (Plan Annuel uniquement) :</p>
-            <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>L'essai gratuit de 7 jours s'applique <strong>UNIQUEMENT</strong> à l'abonnement annuel.</li>
-              <li>Pendant l'essai, vous pouvez annuler à tout moment <strong>SANS être facturé</strong>.</li>
-              <li>Si vous n'annulez pas avant la fin des 7 jours, le premier paiement de <strong>39,99 €</strong> sera effectué automatiquement le 8ème jour.</li>
-              <li>L'abonnement mensuel ne bénéficie <strong>PAS</strong> d'essai gratuit : le paiement de 4,99 € est immédiat.</li>
-            </ul>
-          </div>
+          <p className="mb-4"><strong>Yapuka Plus - Annuel :</strong></p>
+          <ul className="list-disc ml-6 space-y-1">
+            <li><strong>Prix : 39,99 €/an</strong> (soit 3,33 €/mois)</li>
+            <li><strong>Durée : 1 an</strong></li>
+            <li><strong>Essai gratuit : 7 jours</strong></li>
+            <li>Renouvellement automatique annuel</li>
+            <li>Mêmes fonctionnalités que l'offre mensuelle</li>
+          </ul>
 
           <h3 className="text-xl font-bold mt-8 mb-4">5.2 Paiement</h3>
           <p>
@@ -182,44 +166,27 @@ export default function CGU() {
 
           <h3 className="text-xl font-bold mt-8 mb-4">5.3 Renouvellement & Annulation</h3>
 
-          <h4 className="font-semibold mt-4 mb-2">Renouvellement automatique :</h4>
-          <p>Les abonnements Yapuka se renouvellent automatiquement selon la périodicité choisie :</p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Mensuel</strong> : Renouvellement tous les mois à la date d'anniversaire de souscription</li>
-            <li><strong>Annuel</strong> : Renouvellement tous les ans à la date d'anniversaire de souscription</li>
-          </ul>
-          <p className="mt-3">
-            Vous serez <strong>automatiquement facturé 24 heures avant</strong> la fin de votre période en cours, sauf si vous annulez votre abonnement avant cette échéance.
+          <p className="mb-4"><strong>Renouvellement :</strong></p>
+          <p className="mb-4">
+            Les abonnements se renouvellent automatiquement. Vous serez facturé 24h avant la fin de chaque période.
           </p>
 
-          <h4 className="font-semibold mt-6 mb-2">Comment annuler votre abonnement :</h4>
-          <p>Pour annuler votre abonnement Yapuka, suivez ces étapes sur votre iPhone ou iPad :</p>
-          <ol className="list-decimal ml-6 space-y-2 mt-3">
-            <li>Ouvrez l'application <strong>Réglages</strong> de votre appareil</li>
-            <li>Appuyez sur <strong>votre nom</strong> en haut de l'écran</li>
-            <li>Sélectionnez <strong>Abonnements</strong></li>
-            <li>Choisissez <strong>Yapuka</strong> dans la liste</li>
-            <li>Appuyez sur <strong>Annuler l'abonnement</strong></li>
-            <li>Confirmez l'annulation</li>
+          <p className="mb-4"><strong>Annulation :</strong></p>
+          <p className="mb-2">Pour annuler :</p>
+          <ol className="list-decimal ml-6 space-y-1 mb-4">
+            <li>Réglages iOS &gt; Votre nom &gt; Abonnements</li>
+            <li>Sélectionnez Yapuka</li>
+            <li>Annuler l'abonnement</li>
           </ol>
 
-          <h4 className="font-semibold mt-6 mb-2">Effet de l'annulation :</h4>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>L'annulation prend effet <strong>à la fin de la période déjà payée</strong></li>
-            <li>Vous conservez l'accès aux fonctionnalités Premium jusqu'à la date de fin</li>
-            <li>Aucun remboursement n'est effectué pour les jours restants non utilisés</li>
-            <li>Après expiration, votre compte repasse automatiquement en version gratuite (10 recettes max)</li>
-          </ul>
+          <p className="mb-4">
+            L'annulation prend effet à la fin de la période payée. Aucun remboursement pour les jours restants.
+          </p>
 
-          <h4 className="font-semibold mt-6 mb-2">Gestion des abonnements :</h4>
-          <p>Tous les abonnements sont gérés <strong>exclusivement par Apple</strong> via l'App Store. VISI'BOOST :</p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>❌ N'a AUCUN accès à vos informations de paiement</li>
-            <li>❌ Ne peut PAS annuler votre abonnement à votre place</li>
-            <li>❌ Ne peut PAS modifier votre mode de paiement</li>
-            <li>❌ Ne peut PAS effectuer de remboursements directs</li>
-          </ul>
-          <p className="mt-3">Pour toute question sur votre abonnement, contactez le support Apple.</p>
+          <p className="mb-4"><strong>Gestion :</strong></p>
+          <p>
+            Les abonnements sont gérés par Apple. VISI'BOOST n'a aucun accès à vos paiements.
+          </p>
 
           <h3 className="text-xl font-bold mt-8 mb-4">5.4 Droit de rétractation</h3>
           <p>
@@ -227,58 +194,28 @@ export default function CGU() {
             numériques fournis immédiatement après l'achat avec l'accord du consommateur.
           </p>
 
-          <h3 className="text-xl font-bold mt-8 mb-4">5.5 Politique de remboursement</h3>
+          <h3 className="text-xl font-bold mt-8 mb-4">5.5 Remboursements</h3>
 
-          <h4 className="font-semibold mt-4 mb-2">Tous les paiements sont gérés par Apple :</h4>
+          <p className="mb-4">
+            Les remboursements sont gérés par Apple.
+          </p>
+
+          <p className="mb-4">
+            Pour demander un remboursement :<br/>
+            <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://reportaproblem.apple.com</a>
+          </p>
+
           <p>
-            Les remboursements pour les achats effectués via l'App Store sont gérés exclusivement par Apple selon leur politique de remboursement. VISI'BOOST ne peut pas effectuer de remboursements directs car nous n'avons aucun accès à vos transactions de paiement.
+            Politique Apple : <a href="https://support.apple.com/fr-fr/HT204084" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://support.apple.com/fr-fr/HT204084</a>
           </p>
 
-          <h4 className="font-semibold mt-6 mb-2">Demander un remboursement à Apple :</h4>
-          <p>Si vous souhaitez demander un remboursement pour votre abonnement Yapuka :</p>
-          <ol className="list-decimal ml-6 space-y-2 mt-3">
-            <li>Rendez-vous sur : <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline font-semibold">https://reportaproblem.apple.com</a></li>
-            <li>Connectez-vous avec votre <strong>Apple ID</strong></li>
-            <li>Recherchez votre achat <strong>Yapuka</strong> dans la liste</li>
-            <li>Cliquez sur <strong>"Signaler un problème"</strong></li>
-            <li>Sélectionnez le motif de votre demande</li>
-            <li>Suivez les instructions d'Apple</li>
-          </ol>
-
-          <h4 className="font-semibold mt-6 mb-2">Délais de traitement :</h4>
+          <h3 className="text-xl font-bold mt-8 mb-4">5.6 Licence Apple (EULA)</h3>
+          <p className="mb-4">
+            Ces conditions complètent la licence standard Apple :<br/>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+          </p>
           <p>
-            Les demandes de remboursement sont traitées par Apple sous 48 heures en moyenne. Apple décidera d'accorder ou non le remboursement selon leur politique.
-          </p>
-
-          <h4 className="font-semibold mt-6 mb-2">Politique de remboursement Apple :</h4>
-          <p>
-            Consultez la politique complète ici : <a href="https://support.apple.com/fr-fr/HT204084" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline font-semibold">https://support.apple.com/fr-fr/HT204084</a>
-          </p>
-
-          <div className="bg-yellow-50 p-5 rounded-lg mt-4 border-l-4 border-yellow-400">
-            <p className="font-bold mb-2">⚠️ Important :</p>
-            <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>Les remboursements ne sont PAS automatiques</li>
-              <li>Apple évalue chaque demande au cas par cas</li>
-              <li>Aucun remboursement partiel n'est possible pour les périodes d'abonnement non utilisées</li>
-              <li>Une fois un remboursement accordé, votre accès Premium Yapuka est immédiatement révoqué</li>
-            </ul>
-          </div>
-
-          <h3 className="text-xl font-bold mt-8 mb-4">5.6 Licence Standard Apple (EULA)</h3>
-          <p>
-            L'utilisation de l'application Yapuka est également régie par la <strong>Licence d'Application Utilisateur Final Standard d'Apple</strong> (Apple Standard EULA).
-          </p>
-          <p className="mt-3">
-            <strong>Consultez la licence complète ici :</strong><br/>
-            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline font-semibold">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
-          </p>
-          <p className="mt-3">
-            <strong>Ordre de priorité :</strong><br/>
-            En cas de conflit entre les présentes Conditions Générales d'Utilisation et l'EULA Standard d'Apple, <strong>les termes de l'EULA Apple prévalent</strong>.
-          </p>
-          <p className="mt-3">
-            Les présentes CGU complètent et précisent l'EULA Apple pour les aspects spécifiques à l'application Yapuka (abonnements, fonctionnalités, données utilisateur).
+            En cas de conflit, l'EULA Apple prévaut.
           </p>
         </section>
 

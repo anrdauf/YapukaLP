@@ -92,97 +92,54 @@ export default function Confidentialite() {
 
         <section id="data" className="prose prose-orange max-w-none mt-10">
           <h2>2. Données collectées</h2>
-          <p>
-            Nous collectons uniquement les données strictement nécessaires au bon fonctionnement du service :
-          </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">2.1 Données de compte :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Identifiant unique utilisateur (UUID, généré automatiquement)</li>
-            <li>Email (uniquement si vous créez un compte via l'application)</li>
-            <li>Mot de passe chiffré (algorithme bcrypt)</li>
+          <p className="mb-4"><strong>Données de compte :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Identifiant utilisateur unique</li>
+            <li>Email (si compte créé)</li>
           </ul>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">2.2 Données de contenu :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Recettes sauvegardées</strong> : titre, ingrédients, instructions, temps de préparation, source</li>
-            <li><strong>URLs importées</strong> : liens vers recettes sur Instagram, TikTok, YouTube, Pinterest, Facebook</li>
-            <li><strong>Photos manuscrites</strong> : stockées temporairement pour analyse OCR (supprimées après extraction)</li>
-            <li><strong>Collections et catégories</strong> : organisations personnalisées de vos recettes</li>
-            <li><strong>Listes de courses</strong> : ingrédients et quantités générées automatiquement</li>
-            <li><strong>Planification de repas</strong> : calendrier de vos repas planifiés</li>
+          <p className="mb-4"><strong>Données de contenu :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Recettes sauvegardées (titre, ingrédients, instructions)</li>
+            <li>URLs des recettes importées (Instagram, TikTok, YouTube, Pinterest, Facebook)</li>
+            <li>Collections créées</li>
+            <li>Listes de courses</li>
+            <li>Planning de repas</li>
           </ul>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">2.3 Données techniques :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Version de l'application iOS</li>
-            <li>Modèle d'appareil (iPhone, iPad)</li>
-            <li>Version iOS</li>
-            <li>Logs d'erreurs techniques (anonymisés, sans données personnelles)</li>
-            <li>Statistiques d'usage anonymisées (nombre de recettes, fréquence d'utilisation)</li>
+          <p className="mb-4"><strong>Données techniques :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Version app</li>
+            <li>Modèle appareil</li>
+            <li>Logs d'erreurs (anonymisés)</li>
           </ul>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">2.4 Données d'abonnement :</h3>
+          <p className="mb-4"><strong>Non collecté :</strong></p>
           <ul className="list-disc ml-6 space-y-1">
-            <li>Statut de l'abonnement (gratuit, Yapuka Plus mensuel, Yapuka Plus annuel)</li>
-            <li>Date de souscription</li>
-            <li>⚠️ Nous n'avons <strong>AUCUN accès</strong> à vos coordonnées bancaires (gérées par Apple)</li>
+            <li>Coordonnées bancaires (gérées par Apple)</li>
+            <li>Localisation GPS</li>
+            <li>Contacts</li>
           </ul>
-
-          <div className="bg-green-50 p-5 rounded-lg mt-6 border-l-4 border-green-400">
-            <p className="font-bold mb-2">✅ Nous ne collectons JAMAIS :</p>
-            <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>❌ Votre nom complet ou prénom</li>
-              <li>❌ Votre adresse postale</li>
-              <li>❌ Votre numéro de téléphone</li>
-              <li>❌ Vos coordonnées bancaires ou cartes de crédit</li>
-              <li>❌ Vos contacts</li>
-              <li>❌ Votre localisation GPS précise</li>
-              <li>❌ Vos messages privés sur les réseaux sociaux</li>
-            </ul>
-          </div>
         </section>
 
         <section id="purpose" className="prose prose-orange max-w-none mt-10">
           <h2>3. Finalité du traitement</h2>
-          <p>
-            Vos données sont utilisées <strong>exclusivement</strong> pour les finalités suivantes :
-          </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">3.1 Fourniture du service :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>✅ Synchroniser vos recettes entre tous vos appareils Apple (via iCloud/Supabase)</li>
-            <li>✅ Importer automatiquement des recettes depuis les réseaux sociaux (Instagram, TikTok, YouTube, Pinterest, Facebook)</li>
-            <li>✅ Extraire les ingrédients et instructions à partir de photos manuscrites (OCR avec IA)</li>
-            <li>✅ Générer automatiquement vos listes de courses à partir des recettes sélectionnées</li>
-            <li>✅ Planifier vos repas de la semaine</li>
-            <li>✅ Catégoriser intelligemment vos recettes (type de plat, difficulté, régime alimentaire)</li>
+          <p className="mb-4">Vos données servent à :</p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Synchroniser vos recettes entre appareils</li>
+            <li>Importer des recettes depuis réseaux sociaux</li>
+            <li>Générer listes de courses automatiques</li>
+            <li>Planifier vos repas</li>
+            <li>Améliorer l'application (analyses anonymes)</li>
           </ul>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">3.2 Amélioration du produit :</h3>
+          <p className="mb-4">Nous n'utilisons PAS vos données pour :</p>
           <ul className="list-disc ml-6 space-y-1">
-            <li>✅ Corriger les bugs et erreurs techniques</li>
-            <li>✅ Améliorer la précision de l'extraction IA des recettes</li>
-            <li>✅ Développer de nouvelles fonctionnalités basées sur l'usage anonymisé</li>
+            <li>Publicité</li>
+            <li>Revente à des tiers</li>
           </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">3.3 Communication :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>✅ Vous envoyer des notifications de rappel pour vos repas planifiés (si vous l'autorisez)</li>
-            <li>✅ Vous informer des mises à jour majeures de l'application</li>
-            <li>✅ Répondre à vos demandes de support</li>
-          </ul>
-
-          <div className="bg-red-50 p-5 rounded-lg mt-6 border-l-4 border-red-400">
-            <p className="font-bold mb-2">❌ Nous n'utilisons JAMAIS vos données pour :</p>
-            <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>❌ Publicité ciblée ou personnalisée</li>
-              <li>❌ Revente à des tiers commerciaux</li>
-              <li>❌ Profilage commercial ou marketing</li>
-              <li>❌ Analyse comportementale à des fins commerciales</li>
-              <li>❌ Partage avec des courtiers en données (data brokers)</li>
-            </ul>
-          </div>
         </section>
 
         <section id="legal" className="prose prose-orange max-w-none mt-10">
@@ -205,119 +162,49 @@ export default function Confidentialite() {
         </section>
 
         <section id="sharing" className="prose prose-orange max-w-none mt-10">
-          <h2>5. Partage avec des tiers</h2>
+          <h2>5. Partage des données</h2>
+
+          <p className="mb-4"><strong>Supabase (Hébergement) :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Stockage de vos recettes</li>
+            <li>Serveurs : Union Européenne</li>
+            <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://supabase.com/privacy</a></li>
+          </ul>
+
+          <p className="mb-4"><strong>n8n (Traitement recettes) :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Import automatique depuis réseaux sociaux</li>
+            <li>Serveur privé Europe</li>
+          </ul>
+
+          <p className="mb-4"><strong>Apple (Paiements) :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Gestion abonnements</li>
+            <li>Nous n'avons pas accès à vos paiements</li>
+            <li><a href="https://www.apple.com/legal/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://www.apple.com/legal/privacy</a></li>
+          </ul>
+
           <p>
-            Nous ne vendons <strong>JAMAIS</strong> vos données personnelles à des tiers. Nous travaillons uniquement avec des
-            partenaires techniques de confiance pour assurer le bon fonctionnement du service :
+            Nous ne vendons JAMAIS vos données.
           </p>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">5.1 Supabase (Hébergement Cloud & Base de données)</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Rôle</strong> : Stockage sécurisé de vos recettes, collections et préférences</li>
-            <li><strong>Localisation</strong> : Serveurs situés en <strong>Union Européenne</strong> (conformité RGPD)</li>
-            <li><strong>Sécurité</strong> : Chiffrement TLS/SSL en transit, chiffrement AES-256 au repos</li>
-            <li><strong>Politique</strong> : <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://supabase.com/privacy</a></li>
-            <li><strong>Engagement</strong> : Supabase ne peut pas accéder à vos données ni les utiliser à d'autres fins</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">5.2 OpenAI (Traitement IA pour extraction de recettes)</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Rôle</strong> : Extraction intelligente des ingrédients et instructions à partir de textes et images</li>
-            <li><strong>Données envoyées</strong> : Textes de recettes et images (anonymisés, sans identifiant utilisateur)</li>
-            <li><strong>Conservation</strong> : Aucun stockage permanent par OpenAI (traitement ponctuel)</li>
-            <li><strong>Politique</strong> : <a href="https://openai.com/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://openai.com/privacy</a></li>
-            <li><strong>Engagement</strong> : Les données sont supprimées après traitement (pas d'entraînement de modèles avec vos recettes)</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">5.3 n8n (Automatisation du traitement des recettes)</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Rôle</strong> : Orchestration du flux de traitement des recettes importées</li>
-            <li><strong>Localisation</strong> : Serveur privé hébergé en Europe</li>
-            <li><strong>Données transitant</strong> : URLs de recettes et contenu extrait (temporaire)</li>
-            <li><strong>Sécurité</strong> : Webhook sécurisé avec authentification par token</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">5.4 Apple (Paiements & Synchronisation iCloud)</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Rôle</strong> : Gestion des abonnements, paiements et synchronisation iCloud (facultative)</li>
-            <li><strong>Engagement</strong> : Nous n'avons <strong>AUCUN accès</strong> à vos coordonnées bancaires ni à vos informations de paiement</li>
-            <li><strong>Politique</strong> : <a href="https://www.apple.com/legal/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://www.apple.com/legal/privacy</a></li>
-          </ul>
-
-          <div className="bg-blue-50 p-5 rounded-lg mt-6 border-l-4 border-blue-400">
-            <p className="font-bold mb-2">🔒 Engagement de transparence :</p>
-            <ul className="list-disc ml-6 space-y-1 text-sm">
-              <li>❌ Nous ne vendons JAMAIS vos données à des tiers</li>
-              <li>❌ Nous ne partageons JAMAIS vos recettes publiquement sans votre consentement</li>
-              <li>❌ Nous ne faisons PAS de publicité dans l'application</li>
-              <li>❌ Nous ne travaillons PAS avec des courtiers en données (data brokers)</li>
-              <li>✅ Tous nos partenaires sont soumis à des accords de confidentialité stricts (DPA - Data Processing Agreements)</li>
-            </ul>
-          </div>
         </section>
 
         <section id="rights" className="prose prose-orange max-w-none mt-10">
           <h2>6. Vos droits (RGPD)</h2>
-          <p>
-            Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong>, vous disposez des droits
-            suivants sur vos données personnelles :
-          </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">6.1 Droit d'accès (Art. 15 RGPD)</h3>
-          <p>
-            Vous pouvez demander une copie complète de toutes vos données personnelles que nous détenons.
-          </p>
+          <p className="mb-4"><strong>Droit d'accès :</strong> Demander copie de vos données</p>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">6.2 Droit de rectification (Art. 16 RGPD)</h3>
-          <p>
-            Vous pouvez corriger ou mettre à jour vos données directement dans l'application ou en nous contactant.
-          </p>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">6.3 Droit de suppression / "Droit à l'oubli" (Art. 17 RGPD)</h3>
-          <p>
-            Vous pouvez supprimer votre compte et <strong>toutes vos données</strong> à tout moment :
-          </p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Depuis l'application</strong> : Profil &gt; Paramètres &gt; Supprimer mon compte</li>
-            <li><strong>Par email</strong> : contact@yapuka.app</li>
-          </ul>
-          <div className="bg-yellow-50 p-4 rounded-lg mt-3 border-l-4 border-yellow-400">
-            <p className="text-sm">
-              <strong>⚠️ Attention</strong> : La suppression est <strong>définitive et irréversible</strong>. Toutes vos recettes,
-              collections et préférences seront définitivement effacées sous 30 jours.
-            </p>
-          </div>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">6.4 Droit à la portabilité (Art. 20 RGPD)</h3>
-          <p>
-            Vous pouvez exporter vos recettes dans un format lisible et réutilisable :
-          </p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Format PDF</strong> : Pour impression ou archivage</li>
-            <li><strong>Format JSON</strong> : Pour import dans d'autres applications</li>
+          <p className="mb-4"><strong>Droit de suppression :</strong></p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li>Dans l'app : Profil &gt; Paramètres &gt; Supprimer compte</li>
+            <li>Ou par email : contact@yapuka.app</li>
           </ul>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">6.5 Droit d'opposition (Art. 21 RGPD)</h3>
-          <p>
-            Vous pouvez vous opposer au traitement de certaines données non essentielles (ex : statistiques d'usage anonymisées).
-          </p>
+          <p className="mb-4"><strong>Droit de portabilité :</strong> Exporter vos recettes (PDF)</p>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">6.6 Droit à la limitation du traitement (Art. 18 RGPD)</h3>
-          <p>
-            Vous pouvez demander la suspension temporaire du traitement de vos données.
-          </p>
-
-          <div className="bg-gray-50 p-5 rounded-lg mt-6 border border-gray-200">
-            <h4 className="font-bold mb-3">📝 Pour exercer vos droits :</h4>
-            <ul className="space-y-2 text-sm">
-              <li>📧 <strong>Email</strong> : contact@yapuka.app</li>
-              <li>📝 <strong>Objet</strong> : "Demande RGPD - [Type de droit]"</li>
-              <li>⏱️ <strong>Délai de réponse</strong> : Maximum <strong>30 jours</strong> (Article 12.3 RGPD)</li>
-            </ul>
-            <p className="mt-3 text-sm">
-              <strong>Documents à fournir</strong> : Copie d'une pièce d'identité pour vérification (sécurité)
-            </p>
-          </div>
+          <p className="mb-4"><strong>Pour exercer vos droits :</strong></p>
+          <p className="mb-2">📧 contact@yapuka.app</p>
+          <p>Délai de réponse : 30 jours maximum</p>
         </section>
 
         <section id="security" className="prose prose-orange max-w-none mt-10">
@@ -356,75 +243,25 @@ export default function Confidentialite() {
         </section>
 
         <section id="retention" className="prose prose-orange max-w-none mt-10">
-          <h2>9. Durée de conservation des données</h2>
+          <h2>9. Durée de conservation</h2>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">Données de compte actif :</h3>
-          <p>
-            <strong>Conservation</strong> : Tant que votre compte est actif et que vous utilisez l'application
-          </p>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">Données après suppression de compte :</h3>
           <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Suppression définitive</strong> : <strong>30 jours maximum</strong> après demande de suppression</li>
-            <li><strong>Période de grâce</strong> : 7 jours pour annuler la suppression (si demandée par erreur)</li>
-            <li><strong>Après suppression</strong> : Aucune récupération possible</li>
+            <li>Compte actif : Tant que vous utilisez l'app</li>
+            <li>Après suppression : 30 jours maximum</li>
+            <li>Logs techniques : 90 jours</li>
           </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">Logs techniques et statistiques :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li><strong>Conservation</strong> : <strong>90 jours maximum</strong></li>
-            <li><strong>Anonymisation</strong> : Immédiate (suppression de tout identifiant personnel)</li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-6 mb-4">Données de facturation (Apple) :</h3>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Gérées exclusivement par Apple selon leur politique de conservation</li>
-            <li>VISI'BOOST n'a aucun accès à ces données</li>
-          </ul>
-
-          <div className="bg-gray-50 p-5 rounded-lg mt-4 border-l-4 border-gray-400">
-            <p className="text-sm">
-              <strong>⚖️ Obligation légale :</strong><br/>
-              En cas d'obligation légale (ex : enquête judiciaire), certaines données peuvent être conservées au-delà de ces
-              délais, conformément aux lois françaises et européennes.
-            </p>
-          </div>
         </section>
 
         <section id="contact" className="prose prose-orange max-w-none mt-10 mb-12">
           <h2>10. Contact et réclamations</h2>
 
-          <h3 className="text-xl font-bold mt-6 mb-4">Questions sur vos données personnelles ?</h3>
-          <p>
-            📧 <strong>Email</strong> : contact@yapuka.app<br/>
-            📍 <strong>Éditeur</strong> : VISI'BOOST, France
-          </p>
-          <p>
-            Nous nous engageons à répondre à toutes vos questions dans un délai de <strong>48 heures ouvrées</strong>.
-          </p>
+          <p className="mb-4"><strong>Questions :</strong></p>
+          <p className="mb-4">📧 contact@yapuka.app</p>
 
-          <h3 className="text-xl font-bold mt-8 mb-4">Réclamations auprès de la CNIL (France) :</h3>
+          <p className="mb-4"><strong>Réclamation CNIL :</strong></p>
           <p>
-            Si vous estimez que vos droits ne sont pas respectés ou que le traitement de vos données n'est pas conforme au RGPD,
-            vous pouvez déposer une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :
-          </p>
-          <ul className="list-none space-y-2">
-            <li>🌐 <strong>Site web</strong> : <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://www.cnil.fr/fr/plaintes</a></li>
-            <li>📞 <strong>Téléphone</strong> : 01 53 73 22 22</li>
-            <li>
-              📮 <strong>Adresse postale</strong> :<br/>
-              CNIL<br/>
-              3 Place de Fontenoy<br/>
-              TSA 80715<br/>
-              75334 PARIS CEDEX 07<br/>
-              France
-            </li>
-          </ul>
-
-          <h3 className="text-xl font-bold mt-8 mb-4">Délégué à la Protection des Données (DPO) :</h3>
-          <p>
-            Pour toute question relative à la protection de vos données personnelles, vous pouvez contacter notre DPO à :
-            <strong> contact@yapuka.app</strong> (objet : "DPO - Protection des données")
+            Si vos droits ne sont pas respectés :<br/>
+            <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline">https://www.cnil.fr/fr/plaintes</a>
           </p>
         </section>
       </div>
