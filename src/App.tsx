@@ -281,8 +281,8 @@ export default function App() {
         <div>
           <h3 className="font-bold text-white mb-4">Légal</h3>
           <ul className="space-y-3 text-sm">
-            <li><a href="/terms-of-use" className="hover:text-orange-500 transition">Conditions d'utilisation</a></li>
-            <li><a href="/privacy-policy" className="hover:text-orange-500 transition">Politique de confidentialité</a></li>
+            <li><a href="/cgu" className="hover:text-orange-500 transition">Conditions d'utilisation</a></li>
+            <li><a href="/confidentialite" className="hover:text-orange-500 transition">Politique de confidentialité</a></li>
             <li><a href="/contact" className="hover:text-orange-500 transition">Contact</a></li>
           </ul>
         </div>
