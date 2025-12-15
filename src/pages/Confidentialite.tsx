@@ -257,7 +257,7 @@ export default function Confidentialite() {
 
           <p className="mb-4"><strong>Questions :</strong></p>
           <p className="mb-2">📧 contact@yapuka.app</p>
-          <p className="mb-4">🌐 <a href="https://www.yapuka.app/#/contact" className="text-orange-600 underline">www.yapuka.app/#/contact</a></p>
+          <p className="mb-4">🌐 <a href="https://www.yapuka.app/contact" className="text-orange-600 underline">www.yapuka.app/contact</a></p>
 
           <p className="mb-4"><strong>Réclamation CNIL :</strong></p>
           <p>
