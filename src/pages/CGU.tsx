@@ -306,6 +306,8 @@ export default function CGU() {
             <br />
             📧 <a href="mailto:contact@yapuka.app" className="underline">contact@yapuka.app</a>
             <br />
+            🌐 <a href="https://www.yapuka.app/#/contact" className="underline">www.yapuka.app/#/contact</a>
+            <br />
             📍 Éditeur : VISI'BOOST, France.
           </p>
         </section>
